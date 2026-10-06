@@ -1,0 +1,1 @@
+{"version":3,"file":"web.d.ts","sourceRoot":"","sources":["../../src/adapters/web.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,kBAAkB,CAAA;AAEnD,KAAK,UAAU,GAAG,CAAC,OAAO,EAAE,OAAO,KAAK,QAAQ,GAAG,OAAO,CAAC,QAAQ,CAAC,CAAA;AAEpE;;;;;;GAMG;AACH,wBAAgB,kBAAkB,CAAC,WAAW,EAAE,WAAW,EAAE,OAAO,EAAE,UAAU,GAAG,UAAU,CA4B5F"}
