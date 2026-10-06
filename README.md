@@ -280,6 +280,10 @@ yarn build          # rebuild dist/ — commit the result before tagging
 
 Release checklist: bump version if needed, run `yarn build`, commit `dist/`, tag `v1` (or `v1.x.y`).
 
+## Acknowledgements
+
+The correlation-id validation, UUIDv7 layout, AsyncLocalStorage context, and the HTTP, Fastify, and fetch adapters are derived from [pk-correlation-id](https://github.com/L1k4Root/pk-correlation-id) by Andres (L1k4Root), which is also MIT licensed.
+
 ## License
 
 MIT
