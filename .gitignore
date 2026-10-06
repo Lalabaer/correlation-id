@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+
+# Yarn 4.x
+.yarn/*
+!.yarn/patches/
+!.yarn/plugins/
+!.yarn/releases/
+!.yarn/sdks/
+!.yarn/versions/
+!.yarnrc.yml
+.pnp.*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cursor
+.cursor/
+
+# Logs
+logs
+*.log
+
+# typescript
+*.tsbuildinfo
+
+# Test coverage
+coverage
