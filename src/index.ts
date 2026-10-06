@@ -1,5 +1,8 @@
+import { attachCorrelation } from './adapters/axios.js'
 import { expressCorrelation } from './adapters/express.js'
 import { fastifyCorrelation } from './adapters/fastify.js'
+import { correlationFetch } from './adapters/fetch.js'
+import { kafkaHeaders, withKafkaMessage } from './adapters/kafka.js'
 import { withCorrelation } from './adapters/node-http.js'
 import { withWebCorrelation } from './adapters/web.js'
 import { createCorrelation as createCorrelationCore } from './core/correlation.js'
@@ -17,15 +20,19 @@ export function createCorrelation(config: CorrelationConfig = {}): Correlation {
 
 export {
     assertHeaderName,
+    attachCorrelation,
     type Correlation,
     type CorrelationConfig,
+    correlationFetch,
     expressCorrelation,
     fastifyCorrelation,
     type HeaderBag,
     isValidCorrelationId,
     isValidHeaderName,
+    kafkaHeaders,
     MAX_ID_LENGTH,
     uuidv7,
     withCorrelation,
+    withKafkaMessage,
     withWebCorrelation,
 }

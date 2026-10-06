@@ -1,3 +1,5 @@
+import { attachCorrelation } from './adapters/axios.js'
+import { correlationFetch } from './adapters/fetch.js'
 import { createCorrelation as createCorrelationCore } from './core/correlation.js'
 import { assertHeaderName, isValidHeaderName } from './core/header-name.js'
 import { isValidCorrelationId, MAX_ID_LENGTH, uuidv7 } from './core/id.js'
@@ -16,8 +18,10 @@ export function createCorrelation(config: CorrelationConfig = {}): Correlation {
 
 export {
     assertHeaderName,
+    attachCorrelation,
     type Correlation,
     type CorrelationConfig,
+    correlationFetch,
     type HeaderBag,
     isValidCorrelationId,
     isValidHeaderName,
